@@ -1,0 +1,25 @@
+[[source]]
+name = "tdd_intro"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[scripts]
+cli = "python3 -m tdd_intro"
+test = "python3 -m pytest -v --approvaltests-add-reporter='kdiff3'"
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+rope = "*"
+pytest = "*"
+approvaltests = "*"
+doubles = "*"
+pytest-approvaltests = "*"
+tdd_intro = {editable = true, path = "."}
+
+[packages]
+tinydb = "*"
+pyinquirer = "*"
+
+[requires]
+python_version = "3"
