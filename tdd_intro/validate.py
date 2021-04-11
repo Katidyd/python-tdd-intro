@@ -1,2 +1,3 @@
 def validatetodo(user_todo_string):
-    return False
+    return len(user_todo_string) > 0
+
